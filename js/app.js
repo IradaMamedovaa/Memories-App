@@ -43,8 +43,10 @@ async function showQuestions(data,number,prevAnswer){
     const answers = document.querySelectorAll('.answer');
     answers.forEach(answer => answer.addEventListener('click',(e)=>{
         number ++;
-        showQuestions(getQuestions(API),number,checkAnswer(e.target,questionObj.correct_answer));
-    }))
+        setTimeout(()=>{
+            showQuestions(getQuestions(API),number,checkAnswer(e.target,questionObj.correct_answer));
+        },500)
+        }))
 
 }
 

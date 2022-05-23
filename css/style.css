@@ -43,23 +43,14 @@
     border: 1px solid lightblue;
     border-radius: 10px;
     width: 500px;
-    transition: 1s;
-}
-.answer:hover{
-    background-color: lightblue;
-}
-.answer:focus{
-    background-color: none;
 }
 .correct{
     border-color: green;
-    background-color: none;
-    transition: 1s;
+    background-color: green;
 }
 .wrong{
     border-color: red;
-    background-color: none;
-    transition: 1s;
+    background-color: red;
 }
 
 /* Result section  */
